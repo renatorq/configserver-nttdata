@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    database: postgresql
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost/consulta_medica
+    username: postgres
+    password: coopac@780**
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/consultaMedica

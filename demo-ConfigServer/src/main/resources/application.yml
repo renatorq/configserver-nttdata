@@ -1,0 +1,16 @@
+server: 
+  port: 8091
+spring: 
+  application:
+    name: config-server-demo
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/renatorq/configserver-nttdata.git
+          username: 
+          password: 
+          default-label: main
+  profiles:
+    active: git
+          
